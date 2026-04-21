@@ -4,4 +4,5 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('lista.html', titulo='canciones')
+    lista=['La guitarra','Para no verte más','Balada para un gordo']
+    return render_template('lista.html',titulo= 'canciones', musicas=lista)
